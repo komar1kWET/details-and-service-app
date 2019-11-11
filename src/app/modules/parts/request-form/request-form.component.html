@@ -1,0 +1,16 @@
+  <form class="form" [formGroup]="requestForm">
+    <h3 class="form__header">Оставить заявку</h3>
+    <div class="form__block">
+      <label class="form__label" for="model">Укажите модель техники</label>
+      <input type="text" name="name" placeholder="Модель техники" id="model" required formControlName="model">
+    </div>
+    <div class="form__block">
+      <label class="form__label" for="year">Укажите год выпуска</label>
+      <input type="number" name="year" placeholder="Год выпуска" id="year" required formControlName="year">
+    </div>
+    <div class="form__block">
+      <label class="form__label" for="parts">Напишите какие запчасти ищете</label>
+      <textarea class="form__textarea" type="text" name="parts" placeholder="Укажите vin для точного подбора" id="parts" required formControlName="parts"></textarea>
+    </div>
+      <button class="form__btn" type="submit">Отправить</button>
+  </form>

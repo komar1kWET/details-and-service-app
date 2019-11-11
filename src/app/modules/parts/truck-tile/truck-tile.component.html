@@ -1,1 +1,6 @@
-<p>truck-tile works!</p>
+<ul class="trucks-list">
+  <li class="truck-li" *ngFor="let truck of trucks">
+    <img class="truck" src="{{truck.url}}" alt="{{truck.name}}">
+    <span>{{truck.name}}</span>
+  </li>
+</ul>

@@ -27,7 +27,7 @@ export const TRUCKS = [
   {
     id: 6,
     name: 'Грейдеры',
-    url: '../assets/img/grader',
+    url: '../assets/img/grader.png',
   }
 ];
 
