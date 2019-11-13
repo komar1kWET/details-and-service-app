@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import {PartsModule} from './modules/parts/parts.module';
 import { FooterComponent } from './modules/footer/footer.component';
 import { HeaderComponent } from './modules/header/header.component';
+import {RepairModule} from './modules/repair/repair.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HeaderComponent } from './modules/header/header.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PartsModule
+    PartsModule,
+    RepairModule
   ],
   providers: [],
   bootstrap: [AppComponent]
