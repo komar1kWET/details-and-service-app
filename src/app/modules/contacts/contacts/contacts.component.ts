@@ -1,11 +1,11 @@
 import {Component, ElementRef, OnInit, Renderer2} from '@angular/core';
 
 @Component({
-  selector: 'app-parts',
-  templateUrl: './parts.component.html',
-  styleUrls: ['./parts.component.sass']
+  selector: 'app-contacts',
+  templateUrl: './contacts.component.html',
+  styleUrls: ['./contacts.component.sass']
 })
-export class PartsComponent implements OnInit {
+export class ContactsComponent implements OnInit {
 
   constructor(
     private elementRef: ElementRef,
@@ -15,7 +15,7 @@ export class PartsComponent implements OnInit {
   ngOnInit() {
     this.renderer.setStyle(
       this.elementRef.nativeElement.ownerDocument.body,
-      'backgroundImage', 'url("../../../../assets/img/parts-page/bg-parts.png")'
+      'backgroundImage', 'url("../../../../assets/img/contacts-page/bg-contacts.png")'
     );
   }
 

@@ -3,16 +3,6 @@ import { CommonModule } from '@angular/common';
 import { TruckTileComponent } from './truck-tile/truck-tile.component';
 import { RequestFormComponent } from './request-form/request-form.component';
 import {ReactiveFormsModule} from '@angular/forms';
-import {
-  MatButtonModule,
-  MatCardModule,
-  MatDialogModule,
-  MatFormFieldModule,
-  MatIconModule, MatInputModule,
-  MatTableModule,
-  MatTooltipModule
-} from '@angular/material';
-import {FlexLayoutModule} from '@angular/flex-layout';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { PartsComponent } from './parts/parts.component';
 import { WarrantyComponent } from './warranty/warranty.component';
@@ -27,15 +17,6 @@ import { WarrantyComponent } from './warranty/warranty.component';
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    MatButtonModule,
-    MatTooltipModule,
-    MatDialogModule,
-    MatIconModule,
-    MatTableModule,
-    MatCardModule,
-    MatFormFieldModule,
-    MatInputModule,
-    FlexLayoutModule,
     BrowserAnimationsModule
   ]
 })

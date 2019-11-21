@@ -7,6 +7,10 @@ import {PartsModule} from './modules/parts/parts.module';
 import { FooterComponent } from './modules/footer/footer.component';
 import { HeaderComponent } from './modules/header/header.component';
 import {RepairModule} from './modules/repair/repair.module';
+import {DeliveryModule} from './modules/delivery/delivery.module';
+import {ContactsModule} from './modules/contacts/contacts.module';
+import {AboutModule} from './modules/about/about.module';
+import {CookieService} from 'ngx-cookie-service';
 
 @NgModule({
   declarations: [
@@ -18,9 +22,12 @@ import {RepairModule} from './modules/repair/repair.module';
     BrowserModule,
     AppRoutingModule,
     PartsModule,
-    RepairModule
+    RepairModule,
+    DeliveryModule,
+    ContactsModule,
+    AboutModule,
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

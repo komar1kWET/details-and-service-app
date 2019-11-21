@@ -24,13 +24,18 @@
   box-shadow: 5px 0 20px 10px rgba(0,0,0,0.25)
 
   &__link
-    line-height: 16%
+    //line-height: 16%
+    height: 2.29vw
     font-size: 1.3vw
-    height: 16%
     text-align: center
     margin: auto
     font-family: 'DINPro Medium'
     cursor: pointer
+    text-decoration: none
+    color: black
+
+  &__link:focus
+    border-bottom: 1px black solid
 
   &__logo
     width: 9.375vw
@@ -41,3 +46,9 @@
   &__phones
     font-family: 'DINPro black'
     font-size: 1.3vw
+    height: 3vw
+    margin: auto
+
+
+  &__phones :first-child
+
