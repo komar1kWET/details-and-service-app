@@ -1,3 +1,5 @@
+@import "~src/styles"
+
 @font-face
   font-family: DINPro regular
   src: url(../../../assets/fonts/DINpro/dinpro-regular.otf) format("opentype")
@@ -17,7 +19,7 @@
   width: 75%
   justify-items: center
   flex-wrap: wrap
-  margin: -10px auto 5.2vw auto
+  margin: -10px auto $vertical-space*3 auto
   background-color: #ffefaf
   padding: 1.56vw 1.56vw 0 1.56vw
   border-radius: 0 0 30px 30px
@@ -44,11 +46,10 @@
     padding-bottom: 0
 
   &__phones
-    font-family: 'DINPro black'
+    font-family: $black
     font-size: 1.3vw
     height: 3vw
     margin: auto
 
 
-  &__phones :first-child
 

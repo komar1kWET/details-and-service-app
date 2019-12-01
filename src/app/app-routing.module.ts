@@ -5,12 +5,13 @@ import {RepairComponent} from './modules/repair/repair/repair.component';
 import {DeliveryComponent} from './modules/delivery/delivery/delivery.component';
 import {ContactsComponent} from './modules/contacts/contacts/contacts.component';
 import {AboutComponent} from './modules/about/about/about.component';
+import {RepairModule} from './modules/repair/repair.module';
 
 
 const routes: Routes = [
   {path: '', redirectTo: '/parts', pathMatch: 'full'},
   {path: 'parts', component: PartsComponent},
-  {path: 'repair', component: RepairComponent},
+  {path: 'repair', loadChildren: () => RepairModule},
   {path: 'delivery', component: DeliveryComponent},
   {path: 'contacts', component: ContactsComponent},
   {path: 'about', component: AboutComponent}

@@ -3,27 +3,30 @@
 .form
   display: flex
   flex-direction: column
-  width: 34.37vw
-  height: 39.58vw
+  width: 28.64vw
+  height: 33.38vw
   border: 1px solid black
   text-align: start
   background-color: white
   border-radius: 40px
-  margin-top: 5.57vw
 
   &__block
-    width: 28.13vw
+    width: 22.44vw
     display: flex
     flex-direction: column
     margin-left: 3.12vw
+    &::placeholder
+      @include text_xs
+      margin-left: $vertical-space/3
 
   &__header
     text-align: center
+    font-size: 1.14vw
     margin-top: 3.12vw
+    font-family: $black
 
   &__label
-    font-family: "DINPro regular"
-    font-size: $Xs-font-size
+    @include text_xs
     margin-top: 1.51vw
     margin-bottom: 1.51vw
 
@@ -31,7 +34,7 @@
     font-size: $Xs-font-size
     color: white
     background-color: #1b23b0
-    font-family: "Din pro black"
+    font-family: $black
     border-radius: 20px
     width: 9.5vw
     height: 2.08vw
@@ -43,7 +46,7 @@
       transition: 0.4s
 
   &__textarea
-    height: 11.45vw
+    height: 5.46vw
     resize: none
 
 

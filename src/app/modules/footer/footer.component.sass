@@ -1,30 +1,34 @@
 @import "~src/styles"
 
 .footer
+  position: relative
+  bottom: 0
   display: flex
-  flex-direction: row
   justify-content: space-between
   width: 75vw
-  height: 5.20vw
+  //height: 5.20vw
   margin: 6.25vw auto 1.56vw auto
 
   &__requisites
-    font-family: 'DINPro regular'
-    font-size: $Xs-font-size
-    letter-spacing: $Head-letter-space
-    line-height: 1.40vw
-    margin: 0
+    @include text_little
 
   &__social
     display: flex
-    flex-direction: row
     width: 10.15vw
     justify-content: space-between
+    align-items: center
 
   &__img
     width: 2.34vw
     height: 2.39vw
-    margin-top: 15%
 
+  &__phones
+    display: flex
+    flex-direction: column
+    font-family: $black
+    justify-content: center
+    align-items: center
+    font-size: 2.08vw
+    letter-spacing: 0.08em
 
 

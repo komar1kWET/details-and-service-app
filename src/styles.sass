@@ -1,35 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css'
 
-$Head-letter-space: 0.06em
-$Head-font-size: 3.49vw
-$Paragraph-font-size: 1.3vw
-$Xs-font-size: 0.86vw
+$vertical-space: 3.12vw
+$Head-font-size: 40px
+$Paragraph-font-size: 18px
+$Xs-font-size: 0.93vw
 $Md-font-size: 1.71vw
-$line-height: 2.38vw
 $black: 'DINPro black'
+$regular: 'DINPro regular'
 
-.header
-  font-size: $Head-font-size
-  font-family: 'DINPro black'
-  letter-spacing: $Head-letter-space
+@mixin header
+  font-size: 40px
+  font-family: $black
+  letter-spacing: 0.08em
+  line-height: 55px
 
-.text
-  font-size: $Paragraph-font-size
-  font-family: 'DINPro regular'
-  letter-spacing: $Head-letter-space
-  line-height: $line-height
+@mixin text
+  font-size: 18px
+  font-family: $regular
+  letter-spacing: 0.1em
+  line-height: 30px
 
-.text_middle
-  font-family: 'DINPro regular'
-  letter-spacing: $Head-letter-space
-  font-size: $Md-font-size
-  line-height: $line-height
+@mixin text_little
+  font-family: $regular
+  font-size: 0.93vw
+  letter-spacing: 0.1em
+  line-height: 1.45vw
 
-.phones
-  display: flex
-  flex-direction: column
-  font-family: 'DINPro black'
-  justify-content: center
-  font-size: 1.72vw
-  letter-spacing: $Head-letter-space
+@mixin text_xs
+  font-family: $regular
+  font-size: $Xs-font-size
+  letter-spacing: 0.1em
+  line-height: 1.5vw
+
+
+
