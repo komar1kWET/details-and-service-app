@@ -11,6 +11,7 @@ import {DeliveryModule} from './modules/delivery/delivery.module';
 import {ContactsModule} from './modules/contacts/contacts.module';
 import {AboutModule} from './modules/about/about.module';
 import {CookieService} from 'ngx-cookie-service';
+import {APP_BASE_HREF} from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,10 @@ import {CookieService} from 'ngx-cookie-service';
     ContactsModule,
     AboutModule,
   ],
-  providers: [CookieService],
+  providers: [
+    CookieService,
+    {provide: APP_BASE_HREF, useValue: '/details-and-service-app/'}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
