@@ -30,7 +30,7 @@ import {APP_BASE_HREF} from '@angular/common';
   ],
   providers: [
     CookieService,
-    {provide: APP_BASE_HREF, useValue: '/details-and-service-app/'}
+    {provide: APP_BASE_HREF, useValue: '/details-and-service-pages/'}
   ],
   bootstrap: [AppComponent]
 })

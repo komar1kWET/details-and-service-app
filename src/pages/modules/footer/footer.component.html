@@ -6,12 +6,11 @@
     Заявки принимаются в любое время, в любой день недели!
   </p>
   <span class="footer__phones">
-    8 (921) 183 99 66<br/>
-    8 (921) 094 32 32
+    8 (921) 183 99 66
   </span>
-  <div class="footer__social">
-    <img class="footer__img" src="../../../assets/img/static/instagram_logo.png" alt="instagram logo">
-    <img class="footer__img" src="../../../assets/img/static/telegram_logo.png" alt="telegram logo">
-    <img class="footer__img" src="../../../assets/img/static/whatsapp_logo.png" alt="whatsapp logo">
+  <div class="footer__social" >
+    <img class="footer__img" *ngFor="let social of socialMedia"
+         (click)="navigateToSocialMessenger(social.externalUrl)"
+         src="{{social.imageUrl}}">
   </div>
 </footer>

@@ -7,7 +7,7 @@ import {CookieService} from 'ngx-cookie-service';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent implements OnInit {
-  title = 'details-and-service-app';
+  title = 'details-and-service-pages';
   private cookieValue: string;
   constructor(
     private cookieService: CookieService

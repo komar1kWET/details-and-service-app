@@ -10,6 +10,5 @@ export class YamapsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    // this._create
   }
 }

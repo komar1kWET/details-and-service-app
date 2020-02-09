@@ -1,5 +1,11 @@
 @import "src/styles"
 
+.header
+  @include header
+
+.text
+  @include text
+
 .contacts-page
   margin: auto
   width: 68.75vw
@@ -11,6 +17,8 @@
   &__text_bold
     font-family: $black
 
+.text_middle
+  font-size: 22px
 
 .map-container-inner
   width: 300px
@@ -20,4 +28,6 @@ ya-map
   display: block
   width: 400px
   height: 400px
+
+
 
